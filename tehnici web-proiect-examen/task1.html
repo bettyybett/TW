@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>tehnici web</title>
+</head>
+<body>
+<!--p>
+----------------DONE--------------
+1.Expresii regulate. Folosirea a minim 5 expresii regulate diferite, 
+mai complexe, pentru validarea datelor dintr-un formular.
+ De exemplu: se verifica faptul ca un sir e format doar din litere 
+ si incepe cu litera mare, se verifica faptul ca un sir incepe cu 
+ cifrele 072 si in rest e format dor din 7 alte cifre, se verifica
+ faptul ca un sir incepe cu "www." 
+se termina cu com/ro/edu/gov etc si nu contine carcatere "/" etc
+(0.5)
+----------------DONE--------------
+3.5
+Culoare valida. In pagina va exista un input de tip text si 
+un buton cu textul "seteaza culoare background". 
+La click pe buton, se va prelua culoarea din input 
+si daca e valida se va asocia backgroundului, 
+daca nu, se va da un alert cu mesajul "Culoare invalida".
+(0.5)
+
+-----------------DONE-----------
+3.Varsta utilizator. Va exista in pagina, la inceput, 
+un input in care un utilizator isi poate trece data 
+nasterii sub forma zi#luna#an. La click pe un buton se va afisa 
+imediat sub input varsta utilizatoului in ani, luni si zile,
+ ore minute secunde ( de exemplu: 19 ani 3 luni si 4 zile,
+ 12 ore 15 minute 4 secunde). 
+ Afisajul varstei se va actualiza la fiecare secunda.
+(1)
+-----------------DONE-----------
+4.Aparitie treptata titlu. 
+Sa se afiseze titlul paginii printr-o animatie, in felul urmator. 
+La fiecare 100 milisecunde se fac vizibile doua litere ale titlului:
+ intai prima si ultima, apoi a doua si penultima, 
+ apoi a treia si antepenultima, continuand pana in mijloc.
+ (1)
+ 
+ 5.Ravase. La intrarea pe pagina, intr-o sectiune speciala se 
+ va afisa o prezicere aleatoare (dintr-un vector de siruri). 
+ De exemplu: "O sa treci toate examenele!", 
+ "O sa ai o vara frumoasa!",
+ "O sa te ciupeasca un tantar!" etc.
+ 
+--------------------DONE-----------------------
+6. Aparitie treptata cuvant. La intrarea pe pagina,
+ sa existe minim 2 sectiuni cu text, in care textul
+ apare cuvant cu cuvant intr-o "animatie" JavaScript 
+ (la fiecare treime de secunda apare cate un cuvant din text). 
+(1)
+--------------------DONE-----------------------
+7.Realizarea unei animatii mai complexe prin javascript. 
+Exemple de animatii posibile:
+deplasarea unui element in pagina pe o traiectorie circulara 
+sau eliptica
+deplasarea unui obiect pe o linie franta inchisa/deschisa
+deplasarea mai multor obiecte in acelasi timp dar pe traiectorii 
+simple (segmente) diferite, ori pe aceeasi traiectorie dar sa
+aiba un delay intre ele (sa nu se deplaseze ca un grup unitar)
+miscare accelerata sau decelerata 
+(care sa nu aiba acceleratie constanta pe tot parcursul
+ traiectoriei) a unui obiect care poate fi controlata prin 
+ inputuri (se scrie viteza initiala, acceleratia/deceleratia la 
+ diverse momente de timp. Nu se accepta bouncy objects sau caderi
+ gravitationale fiind deja multe implementate pe internet!
+
+
+<--p>
+<!--p>----------------------------------------------<p-->
+<table align="center">
+<tr>
+<td>
+
+<p id="titlu"> </p></td>
+<td><p id="titlu1">&#x202e </p></td>
+</tr>
+</table>
+<script src="task1.js"> </script>
+<link rel="stylesheet" href="tw.css" />
+<p id="bla"></p>
+<!--p>----------------------------------------------<p-->
+<h2>Ce culoare vrei sa aiba fundalul?</h2>
+<input type="text" id="bkg" placeholder="background"/>
+<button onclick="bkground()">Schimba culoarea </button>
+<!--p>----------------------------------------------<p-->
+<h3>Colours signification</h3>
+<h5>Purple's meaning</h5>
+<section id="purple">
+
+</section>
+
+<br>
+<br>
+<h5>Turquoise's meaning</h5>
+
+<section id="turquoise">
+</section>
+<table>
+<!--p>----------------------------------------------<p-->
+<tr>
+<td id="ex1">
+<h3>Datele utilizatorului</h3>
+
+  <input type="text" id="telefon" placeholder="Numarul de telefon"/> <br>
+  <input type="text" id="site" placeholder="Site-ul personal" /><br>
+  <input type="text" id="cnp" placeholder="CNP-ul dvs" /><br>
+  <input type="text" id="serie_buletin" placeholder="Serie buletin" /><br>
+  <input type="text" id="email" placeholder="Email-ul dvs" /><br>
+	<button onclick="validate()">Submit </button>
+<p id="rezultat_telefon"> </p>
+<p id="rezultat_site"> </p>
+<p id="rezultat_cnp"> </p>
+<p id="rezultat_serie"> </p>
+<p id="rezultat_email"> </p>
+</td>
+<!--p>----------------------------------------------<p-->
+<td id="ex2">
+<h3>Varsta utilizatorului</h3>
+
+  <input type="number" id="anul" placeholder="Anul tau de nastere"/> <br>
+  <input type="number" id="luna" placeholder="Luna ta de nastere" /><br>
+  <input type="number" id="ziua" placeholder="Ziua ta de nastere" /><br>
+ <button onclick="interval()">Submit </button>
+<p id="rezvarsta"> </p>
+</td>
+</tr>
+</table>
+<!--p>----------------------------------------------<p-->
+
+<canvas id="canvas" width="350" height="350"></canvas>
+<!--p>----------------------------------------------<p-->
+<p id= "ravase"></p>
+</body>
+</html>
